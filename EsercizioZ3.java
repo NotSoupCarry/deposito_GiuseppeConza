@@ -7,7 +7,7 @@ public class EsercizioZ3 {
         Random random = new Random();
         int numeroRandom = random.nextInt(100) + 1;
         int num = 0;
-        int i = 0;
+        int i = 0; // contatore per i tentativi
         System.out.println("PROVA A VINCERE ALLA NOSTRA LOTTERIA.");
         System.out.println("I NUMERI SONO DA 1 A 100 \n");
         do {
@@ -18,7 +18,12 @@ public class EsercizioZ3 {
                 System.out.print("Tentativo n." + i + " Inserisci un numero: ");
                 if (scanner.hasNextInt()) {
                     num = scanner.nextInt();
-                    break;
+                    if (num > 0 && num <= 100) {
+                        break;
+                    } else {
+                        System.out.println("Errore! Devi inserire un numero da 1 a 100.");
+                        scanner.next();
+                    }
                 } else {
                     System.out.println("Errore! Devi inserire un numero intero.");
                     scanner.next();
