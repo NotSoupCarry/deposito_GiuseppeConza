@@ -35,7 +35,7 @@ public class EsercizioZFusione {
 
             switch (scelta) {
                 case 1: // Somma dei numeri inseriti
-                    int somma = 0; // Variabile per la somma dei numeri
+                    int somma = 0; // Variabile la somma
                     int num;
 
                     System.out.println("Inserisci numeri interi positivi per sommarli.");
@@ -49,11 +49,11 @@ public class EsercizioZFusione {
                                 break;
                             } else {
                                 System.out.println("Errore! Devi inserire un numero intero.");
-                                scanner.next(); // Scarta l'input errato
+                                scanner.next();
                             }
                         }
 
-                        // Se il numero è negativo, interrompo il ciclo
+                        // Se il numero è negativo, interrompo il ciclo della somma dei numeri
                         if (num < 0) {
                             System.out.println("\nNumero negativo inserito.\nTHE END.");
                             continua = false;
@@ -67,7 +67,7 @@ public class EsercizioZFusione {
                     // Stampa del risultato finale
                     System.out.println("La somma dei numeri inseriti è: " + somma);
                     break;
-                case 2: //Tabellina del numero inserito
+                case 2: // Tabellina del numero inserito
                     while (continua) {
                         System.out.print(
                                 "Inserisci un numero intero per calcolare la tabellina (o scrivi 'esci' per terminare): ");
@@ -86,7 +86,7 @@ public class EsercizioZFusione {
 
                         } else {
                             String input = scanner.next();
-                            if (input.equalsIgnoreCase("esci")) { // Controlla se l'utente vuole uscire
+                            if (input.equalsIgnoreCase("esci")) { // Controlla se l'utente vuole uscire dalla funzione della tabellina
                                 System.out.println("THE END, GRAZIE PER ESSERE PASSATI");
                                 continua = false;
                                 break;
@@ -117,6 +117,7 @@ public class EsercizioZFusione {
                             }
                         }
 
+                        // controllo quanto sono distanti i numeri per dare indicazioni al giocatore
                         if (numPlayer > numeroRandom) {
                             if (numPlayer - numeroRandom < 10) {
                                 System.out.println("PIU IN BASSO (fuoco)");
