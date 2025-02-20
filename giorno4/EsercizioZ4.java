@@ -51,7 +51,7 @@ public class EsercizioZ4 {
 
                             if (scanner.hasNextInt()) {
                                 sceltaPrenotazione = scanner.nextInt();
-                                scanner.nextLine(); // Consuma il newline
+                                scanner.nextLine();
                                 if (sceltaPrenotazione == 1 || sceltaPrenotazione == 2) {
                                     break;
                                 } else {
@@ -88,7 +88,7 @@ public class EsercizioZ4 {
                             // Controlla se l'input è un intero
                             if (scanner.hasNextInt()) {
                                 riga = scanner.nextInt();
-                                scanner.nextLine(); // Consuma il newline
+                                scanner.nextLine(); 
 
                                 if (riga >= 1 && riga <= numeroRighe) {
                                     break;
@@ -97,7 +97,7 @@ public class EsercizioZ4 {
                                 }
                             } else {
                                 System.out.println("Errore! Devi inserire un numero intero.");
-                                scanner.next(); // Consuma l'input non valido
+                                scanner.next(); 
                             }
                         }
 
@@ -106,7 +106,7 @@ public class EsercizioZ4 {
                             // Controlla se l'input è un intero
                             if (scanner.hasNextInt()) {
                                 colonna = scanner.nextInt();
-                                scanner.nextLine(); // Consuma il newline
+                                scanner.nextLine(); 
 
                                 if (colonna >= 1 && colonna <= numeroColonne) {
                                     break;
@@ -115,7 +115,7 @@ public class EsercizioZ4 {
                                 }
                             } else {
                                 System.out.println("Errore! Devi inserire un numero intero.");
-                                scanner.next(); // Consuma l'input non valido
+                                scanner.next(); 
                             }
                         }
 
@@ -139,7 +139,7 @@ public class EsercizioZ4 {
                             while (true) {
                                 if (scanner.hasNextInt()) {
                                     sceltaRiprova = scanner.nextInt();
-                                    scanner.nextLine(); // Consuma il newline
+                                    scanner.nextLine(); 
                                     if (sceltaRiprova == 1 || sceltaRiprova == 2) {
                                         break;
                                     } else {
@@ -267,7 +267,7 @@ public class EsercizioZ4 {
                                     System.out.print("Inserisci la colonna da cercare (1-8): ");
                                     if (scanner.hasNextInt()) {
                                         colonnaCercata = scanner.nextInt();
-                                        scanner.nextLine(); // Consuma il newline
+                                        scanner.nextLine(); 
                                         if (colonnaCercata >= 1 && colonnaCercata <= 8) {
                                             break;
                                         } else {
@@ -275,7 +275,7 @@ public class EsercizioZ4 {
                                         }
                                     } else {
                                         System.out.println("Errore! Devi inserire un numero intero.");
-                                        scanner.next(); // Consuma l'input non valido
+                                        scanner.next(); 
                                     }
                                 }
 
@@ -325,7 +325,7 @@ public class EsercizioZ4 {
                                 System.out.print("Riga " + rigaDisponibile + ", Colonna " + colonnaDisponibile + " | ");
                             }
                         }
-                        System.out.println();
+                        System.out.println(); // stampa una spazio a capo ogni qualvolta finiscono le righe
                     }
                     break;
                 case 4: // Visualizza Report posti
